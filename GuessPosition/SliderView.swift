@@ -9,12 +9,15 @@ import SwiftUI
 
 struct SliderView: View {
     
-    @Binding var sliderValue: Float
+    @Binding var sliderValue: Double
+    
+    let color: UIColor
+    let opacity: Int
     
     var body: some View {
         HStack(spacing: 10) {
             Text("0")
-            Slider(sliderValue: $sliderValue)
+            CustomSlider(sliderValue: $sliderValue, color: color, opacity: opacity)
             Text("100")
         }
     }
@@ -22,6 +25,6 @@ struct SliderView: View {
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(sliderValue: .constant(40))
+        SliderView(sliderValue: .constant(40), color: .red, opacity: 50)
     }
 }
