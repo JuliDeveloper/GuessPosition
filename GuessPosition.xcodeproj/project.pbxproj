@@ -14,7 +14,7 @@
 		2554C0D228D2063C00703D77 /* TextCheckNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0D128D2063C00703D77 /* TextCheckNumber.swift */; };
 		2554C0D428D2081F00703D77 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0D328D2081F00703D77 /* ButtonView.swift */; };
 		2554C0D628D20ADB00703D77 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0D528D20ADB00703D77 /* ButtonModifier.swift */; };
-		2554C0D828D2130E00703D77 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0D728D2130E00703D77 /* Slider.swift */; };
+		2554C0D828D2130E00703D77 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0D728D2130E00703D77 /* CustomSlider.swift */; };
 		2554C0DA28D2163100703D77 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0D928D2163100703D77 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		2554C0D128D2063C00703D77 /* TextCheckNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCheckNumber.swift; sourceTree = "<group>"; };
 		2554C0D328D2081F00703D77 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		2554C0D528D20ADB00703D77 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
-		2554C0D728D2130E00703D77 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		2554C0D728D2130E00703D77 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		2554C0D928D2163100703D77 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,11 +63,11 @@
 			children = (
 				2554C0C328D204BC00703D77 /* GuessPositionApp.swift */,
 				2554C0C528D204BC00703D77 /* ContentView.swift */,
-				2554C0D728D2130E00703D77 /* Slider.swift */,
+				2554C0D128D2063C00703D77 /* TextCheckNumber.swift */,
 				2554C0D928D2163100703D77 /* SliderView.swift */,
+				2554C0D728D2130E00703D77 /* CustomSlider.swift */,
 				2554C0D328D2081F00703D77 /* ButtonView.swift */,
 				2554C0D528D20ADB00703D77 /* ButtonModifier.swift */,
-				2554C0D128D2063C00703D77 /* TextCheckNumber.swift */,
 				2554C0C728D204BD00703D77 /* Assets.xcassets */,
 				2554C0C928D204BD00703D77 /* Preview Content */,
 			);
@@ -156,7 +156,7 @@
 				2554C0D228D2063C00703D77 /* TextCheckNumber.swift in Sources */,
 				2554C0D428D2081F00703D77 /* ButtonView.swift in Sources */,
 				2554C0C428D204BC00703D77 /* GuessPositionApp.swift in Sources */,
-				2554C0D828D2130E00703D77 /* Slider.swift in Sources */,
+				2554C0D828D2130E00703D77 /* CustomSlider.swift in Sources */,
 				2554C0D628D20ADB00703D77 /* ButtonModifier.swift in Sources */,
 				2554C0DA28D2163100703D77 /* SliderView.swift in Sources */,
 			);
