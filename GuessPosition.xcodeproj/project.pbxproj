@@ -11,6 +11,7 @@
 		2554C0C628D204BC00703D77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0C528D204BC00703D77 /* ContentView.swift */; };
 		2554C0C828D204BD00703D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2554C0C728D204BD00703D77 /* Assets.xcassets */; };
 		2554C0CB28D204BD00703D77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2554C0CA28D204BD00703D77 /* Preview Assets.xcassets */; };
+		2554C0D228D2063C00703D77 /* TextCheckNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554C0D128D2063C00703D77 /* TextCheckNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2554C0C528D204BC00703D77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2554C0C728D204BD00703D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2554C0CA28D204BD00703D77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2554C0D128D2063C00703D77 /* TextCheckNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCheckNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2554C0C328D204BC00703D77 /* GuessPositionApp.swift */,
 				2554C0C528D204BC00703D77 /* ContentView.swift */,
+				2554C0D128D2063C00703D77 /* TextCheckNumber.swift */,
 				2554C0C728D204BD00703D77 /* Assets.xcassets */,
 				2554C0C928D204BD00703D77 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2554C0C628D204BC00703D77 /* ContentView.swift in Sources */,
+				2554C0D228D2063C00703D77 /* TextCheckNumber.swift in Sources */,
 				2554C0C428D204BC00703D77 /* GuessPositionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
