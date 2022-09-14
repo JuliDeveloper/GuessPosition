@@ -34,7 +34,7 @@ struct CustomSlider: UIViewRepresentable {
     func updateUIView(_ uiView: UISlider, context: Context) {
         
         uiView.value = Float(sliderValue)
-        uiView.thumbTintColor = color.withAlphaComponent(CGFloat(opacity / 100))
+        uiView.thumbTintColor = color.withAlphaComponent(CGFloat(opacity) / 100)
         
     }
     
