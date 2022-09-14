@@ -9,26 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var value: Float = 30
+    @State var targetValue: Int = 40
+    @State var currentValue: Float = 0.0
     @State var isPresentedAlert: Bool = false
     
     var body: some View {
         VStack(spacing: 50) {
-            TextCheckNumber(value: $value)
-            SliderView(sliderValue: $value)
+            TextCheckNumber(value: $targetValue)
+            SliderView(sliderValue: $currentValue)
             VStack(spacing: 20) {
-                ButtonView(title: "Проверь меня!", action: checkValue)
+                ButtonView(title: "Проверь меня!", action: { isPresentedAlert.toggle() })
                     .alert("Твой счёт:", isPresented: $isPresentedAlert, actions: {}) {
-                        Text("")
+                        Text("\(computeScore())")
                     }
-                ButtonView(title: "Начать заново", action: { value = 0 })
+                ButtonView(title: "Начать заново", action: { targetValue = Int.random(in: 0...100) })
             }
         }
         .padding()
     }
     
-    private func checkValue() {
-        isPresentedAlert.toggle()
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(Double(currentValue)))
+        return 100 - difference
     }
 }
 
