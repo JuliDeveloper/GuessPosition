@@ -9,18 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var value: Int = 30
+    @State var value: Float = 30
     @State var isPresentedAlert: Bool = false
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 50) {
             TextCheckNumber(value: $value)
-            ButtonView(title: "Проверь меня!", action: checkValue)
-                .alert("Твой счёт:", isPresented: $isPresentedAlert, actions: {}) {
-                    Text("")
-                }
-            ButtonView(title: "Начать заново", action: { value = 0 })
+            SliderView(sliderValue: $value)
+            VStack(spacing: 20) {
+                ButtonView(title: "Проверь меня!", action: checkValue)
+                    .alert("Твой счёт:", isPresented: $isPresentedAlert, actions: {}) {
+                        Text("")
+                    }
+                ButtonView(title: "Начать заново", action: { value = 0 })
+            }
         }
+        .padding()
     }
     
     private func checkValue() {

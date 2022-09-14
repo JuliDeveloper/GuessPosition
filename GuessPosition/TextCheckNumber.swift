@@ -9,10 +9,10 @@ import SwiftUI
 
 struct TextCheckNumber: View {
     
-    @Binding var value: Int
+    @Binding var value: Float
     
     var body: some View {
-        Text("Подвинь слайдер, как можно ближе к: \(value)")
+        Text("Подвинь слайдер, как можно ближе к: \(Int(value))")
     }
 }
 
