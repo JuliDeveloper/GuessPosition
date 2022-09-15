@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 50) {
-            TextCheckNumber(value: $targetValue)
+            TextCheckNumber(value: targetValue)
             
             SliderView(sliderValue: $currentValue,
                        color: .orange,

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextCheckNumber: View {
     
-    @Binding var value: Int
+    let value: Int
     
     var body: some View {
         Text("Подвинь слайдер, как можно ближе к: \(value)")
@@ -18,6 +18,6 @@ struct TextCheckNumber: View {
 
 struct TextCheckNumber_Previews: PreviewProvider {
     static var previews: some View {
-        TextCheckNumber(value: .constant(30))
+        TextCheckNumber(value: 30)
     }
 }
